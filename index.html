@@ -1,113 +1,360 @@
+<!--
+==============================================================
+Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
+==============================================================
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!--This is the collection of my css files-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Boot strap related links and scrpits-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--End of Boot strap linsk and scripts-->
+
+    <!--JQuery scripts-->
+    <script src="js/jquery.js" type="text/javascript">  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--End of JQuery scripts-->
+
+    <!--AOS resources  DATA AOS library: https://michalsnik.github.io/aos/  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--End of AOS resources-->
+
+    <!--My CSS Scripts-->
     <link rel="stylesheet" href="css/master.css">
+    <!--End of my css Scripts-->
 
-    <!--This is the collection of my js files-->
+    <!--My JS Scripts-->
+    <script src="js/script.js" type="text/javascript">  </script>
+    <!--End of my JS Scripts-->
 
-    <!--THis is the set of links for the various fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans|PT+Serif|Poppins:300i&display=swap" rel="stylesheet">
-    <title>This is my website</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Google Font Scripts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!--End of Google Fonts Scripts-->
+
+    <title>Learning Central</title>
   </head>
   <body>
-    <header id="main_header">
-      <nav id="nav_main">
-        <ul>
-          <li ><img id="nav_logo" src="pics/logo.jpg" align="middle" alt="site logo" ></li>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-          <li><a href="#">link 5</a></li>
-          <li><a href="#">link 6</a></li>
-          <li><a href="#">link 7</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div id="main_wrapper">
-      <aside id="left_aside" class="main_aside">
-        <div id='links' class="main_sidebar">
-          hello
+    <div class="main_wrapper">
+      <!-- WELCOME
+      ================================================== -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tutoring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Programming</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Education</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Start of welcome content
+      =================================================================================================
+      -->
+      <div id="welcome_content" class="container-fluid vertical-center">
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col col-xl-6 col-lg-6 order-lg-1 col-md-6 order-md-1 col-sm-11 order-sm-2 col-xs-11 order-sm-2" data-aos="fade-right">
+              <h1>Welcome to Education central. <br /> Opening education to all. </h1>
+              <h2>Aiming to distill years of teaching experience into simple solutions for others.</h2>
+              <button type="button" class="btn btn-primary">View all pages</button>
+              <button type="button" class="btn btn-secondary">Documentation</button>
+          </div>
+          <div class="col col-xl-6 col-lg-6 order-lg-1 col-md-5 order-md-2 col-sm-11 order-sm-1 col-xs-11 order-sm-1">
+            <img class="img-fluid mx-auto d-block" data-aos="fade-left" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\frontPageImage.jpg" alt="oops, lost the image">
+          </div>
         </div>
+        <div class="row">
+          <div class="col" data-aos="fade-right" data-aos-delay="300">
+            <h5> <a class="linkless" href="#">Tutoring Services</a></h5>
+            <h6>Services, and availabilities for Math and Science tutoring services.</h6>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
+            <h5> <a class="linkless" href="#">Programming and development services</a></h5>
+            <h6>Examples of available services, programming projects and coding resources</h6>
+          </div>
+          <div class="col" data-aos="fade-left" data-aos-delay="300">
+            <h5> <a class="linkless" href="#">Educational documentation and resources</a></h5>
+            <h6>A list of articles, documents, blogs, apps and programs useful for education</h6>
+          </div>
+        </div><!-- End of welcome content row-->
+      </div><!-- End of welcome content-->
 
-        <div id='linkMap' class="main_sidebar">
-          Home
-            - indent 1
-              -- indent 2
-          Section 1
-          Section 2
+
+      <!-- Start of welcome logos
+      =================================================================================================
+      -->
+      <div id="welcome_logos" class="container-fluid p-0">
+        <div class="row">
+          <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 d-none d-sm-inline">
+            <div class="container">
+              <div class="row mx-0 my-0 px-0 py-0">
+                <div class="col col-6">
+                  <div class="container">
+                    <div class="row mx-0 my-0 px-0 py-0">
+                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\SAT.png" alt="">
+                      </div>
+                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\bcEducation.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-6">
+                  <div class="container">
+                    <div class="row mx-0 my-0 px-0 py-0">
+                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\core_conpentency_model.png" alt="">
+                      </div>
+                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\blooms-taxonomy.gif" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 d-none d-sm-inline">
+            <div class="container">
+              <div class="row mx-0 my-0 px-0 py-0">
+                <div class="col col-6">
+                  <div class="container">
+                    <div class="row mx-0 my-0 px-0 py-0">
+                      <div class="col col-6 col-lg-5 d-block">
+                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\bootstrapLogo.png" alt="">
+                      </div>
+                      <div class="col col-6 col-lg-5 d-block">
+                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\javaScript.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-6">
+                  <div class="container">
+                    <div class="row mx-0 my-0 px-0 py-0">
+                      <div class="col col-6 col-lg-6 d-block">
+                          <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\phpLogo.png" alt="">
+                      </div>
+                      <div class="col col-6 col-lg-6 d-block">
+                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\phyton-django.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div id='things2Note' class="main_sidebar">
-          Don't know what this will be
-          Don't know what this will be
-          Don't know what this will be
+      <!-- End of welcome logo row-->
+      </div><!-- End of welcome logo section-->
+      <!-- Start of tutoring explained
+      =================================================================================================
+      -->
+      <div id="tutoring_explained" class="section_container container-fluid">
+        <div class="row align-items-center justify-content-center justify-content-md-center">
+          <div class="col col-12 col-sm-12">
+            <img class="img-fluid mx-auto px-auto d-block" data-aos="fade-up" data-aos-delay="300" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\tutor-and-student-working.jpg" alt="">
+          </div>
+          <div class="col col-12 col-sm-12">
+            <div class="row">
+              <div class="container">
+                <div class="col">
+                  <h3 data-aos="fade-right" data-aos-delay="300">Tutoring services available for Nanimo BC</h3>
+                  <h4 data-aos="fade-left" data-aos-delay="300">Years of experience teaching high school maths and sciences. Willing to meet to discuss your tutoring needs</h4>
+                  <button data-aos="fade-left" data-aos-delay="300" type="button" class="btn btn-primary"><a href="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\tutorLanding.html">Tutor Pages</a></button>
+                </div>
+                <div class="col">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col px-1" data-aos="fade-right" data-aos-delay="300">
+                        <p>SAT Preparation</p>
+                        <p>High School Tutoring</p>
+                        <p>All math Classes supported</p>
+                      </div>
+                      <div class="col px-1" data-aos="fade-left" data-aos-delay="300">
+                        <p>Biology</p>
+                        <p>Chemistry</p>
+                        <p>Physics</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- End of tutoring explained-->
 
-        <div id='other' class="main_sidebar">
-          This is some other stuff
-          This is some other stuff
-          This is some other stuff
+      <!-- Start of programming explained
+      =================================================================================================
+      -->
+      <div id="programming_explained" class="programming_container-fluid">
+        <div class="row">
+          <div class="col">
+            <h3>Technical and programming experience dating back to 2005</h3>
+            <h4>Experience in computer repair, networking and now specializing in website development</h4>
+          </div>
         </div>
-      </aside>
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h5>Support content management systems</h5>
+                <h6>Experience with wordpress, Joomla Django among others.</h6>
+                <h6>Years of custom development: Html5, JS, CSS, Boostrap among others. </h6>
+              </div>
+              <div class="col">
+                  <img class="img-fluid" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\phyton-django.jpg" alt="something">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h5>Website support</h5>
+                <h6>Develop the website you want. Support from scratch development or assist in setting up content management systems such as squarespace or Wix among others. Contant me today to see how I could assist you. </h6>
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\html5Design.png" alt="something">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <img class="img-fluid d-flex" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\webDevelopment.jpg" alt="programming related image">
+          </div>
+        </div>
+      </div>
+      <!-- End of programming explained-->
 
-      <section id="main_section">
-        <header>
-          <h1>Neque porro quisquam est qui dolorem</h1>
-          <h2 class="">Sub title</h2>
-          <h3 class="by_line">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
-        </header>
-        <article class="article">
-          <p class="article_main">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu diam, ullamcorper fermentum turpis ut, pulvinar egestas risus. Sed suscipit felis eget lorem maximus volutpat. Mauris porta orci ex, quis ullamcorper odio porta a. Integer suscipit, dolor at lobortis lacinia, libero enim lacinia orci, non porta felis nulla mollis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce nec ullamcorper quam. Phasellus viverra lorem eu erat dictum iaculis. Sed nec ante vulputate, rhoncus tortor eu, blandit tellus. Maecenas vel mi accumsan, laoreet leo non, tristique nisi. Nam a quam nec quam eleifend auctor. Nullam dignissim rhoncus eros, vitae iaculis nunc venenatis id. Sed at est maximus, venenatis nibh sed, consequat dui.
-          </p>
+      <!-- Start of Education explained
+      =================================================================================================
+      -->
+      <div id="education_explained" class="education_container-fluid">
+        <div class="container">
+          <div class="row">
+            <h3><b>Responsive STEM teacher</b></h3>
+            <h4>With a decade of experience I have worked with students of all backgrounds. I have found the key is to be flexible which requires being up to date with recent research. </h4>
+          </div>
+          <div class="row">
+            <div class="bd-example">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img width="400" height="400" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\core_conpentency_model.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>British Columbia Core Compentencies</h5>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img width="400" height="400" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\bcEducation.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Britich Columbia Ministry of Education</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img width="400" height="400" src="E:\DropBox\Dropbox\0. ApplicationdDevelopment\ASSESSMENTPROGRAMS\webSite\rwm659.github.io\pics\blooms-taxonomy.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Blooms Taxonomy</h5>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of programming explained-->
 
-          <p class="article_main">
-            Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. Ut tortor felis, ullamcorper sed sagittis sit amet, facilisis a libero. Mauris et mattis libero. Duis gravida at velit vitae semper. Sed imperdiet interdum fringilla. Mauris dapibus ipsum eu volutpat viverra. Donec ut urna eget tortor porta fermentum eget at velit. Nullam neque felis, malesuada et condimentum ut, blandit a dui. Mauris malesuada scelerisque pharetra. In scelerisque, turpis et posuere pharetra, nibh sapien ultricies velit, quis molestie risus nunc et lectus.
-          </p>
+      <footer id="main_footer" class="container">
+        <div class="row">
+          <div class="col">
+            <h3><b>Learning Central</b></h3>
+            <h5>Opening education to all</h5>
+            <ul class="icon_row">
+              <li><a href="https://www.khanacademy.org/"><svg class="khan">
+                <path fill="#14bf96" d="M2.31,5.8A3.56,3.56,0,0,0,.66,8.6V19.4a3.56,3.56,0,0,0,1.65,2.8L12,27.62a3.75,3.75,0,0,0,3.3,0L25,22.2a3.56,3.56,0,0,0,1.65-2.8V8.6A3.56,3.56,0,0,0,25,5.8L15.31.38a3.75,3.75,0,0,0-3.3,0Z"></path>
+                <path fill="#ffffff" d="M23.61,11.32c-5.38,0-9.4,4.46-9.4,9.93v.23H13.13v-.23c0-5.47-4-9.91-9.42-9.93,0,.34,0,.69,0,1a9.91,9.91,0,0,0,6.4,9.32,10.47,10.47,0,0,0,3.59.64,10.64,10.64,0,0,0,3.62-.64,9.92,9.92,0,0,0,6.39-9.32C23.66,12,23.64,11.66,23.61,11.32Z"></path>
+                <circle fill="#ffffff" cx="13.66" cy="8.74" r="3"></circle>
+              </svg></a></li>
+              <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+              <li><a href="https://www.instagram.com" class="fa fa-instagram fa-lg"></a></li>
+              <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+              <li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5><b>Tutoring Services</b></h5>
+            <h6>Math tutoring</h6>
+            <h6>Calculus Tutoring</h6>
+            <h6>Physics tutoring</h6>
+            <h6>Chemistry tutoring</h6>
+            <h6>Biology Tutoring</h6>
+            <h6>SAT preparation</h6>
+          </div>
+          <div class="col">
+            <h5><b>Programming</b></h5>
+            <h6>Website development</h6>
+            <h6>Website consultation</h6>
+            <h6>Apps and programs</h6>
+          </div>
+          <div class="col">
+            <h5><b>Education</b></h5>
+            <h6>Course websites</h6>
+            <h6>Science resources</h6>
+            <h6>Math resources</h6>
+            <h6>Educational Pedagogy</h6>
+            <h6>Blog</h6>
+            <h6>Links</h6>
+          </div>
+        </div>
+      </footer>
 
-          <p class="article_main">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam urna ex, placerat et condimentum et, malesuada posuere purus. Donec vehicula elit non fringilla feugiat. Sed a nisl et sem suscipit vehicula. Nunc et nisl rhoncus lectus posuere finibus quis at dui. Nam sodales volutpat porttitor. Etiam id sollicitudin libero, sit amet bibendum elit. Maecenas et dapibus orci. Curabitur vel gravida velit, non accumsan odio. Ut lacinia lacus neque, quis iaculis eros porta sit amet. Nulla blandit ex et molestie dignissim. Maecenas placerat, ante vel pharetra tempor, justo libero hendrerit dui, nec egestas augue nulla nec quam.
-          </p>
-
-          <p class="article_main">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam urna ex, placerat et condimentum et, malesuada posuere purus. Donec vehicula elit non fringilla feugiat. Sed a nisl et sem suscipit vehicula. Nunc et nisl rhoncus lectus posuere finibus quis at dui. Nam sodales volutpat porttitor. Etiam id sollicitudin libero, sit amet bibendum elit. Maecenas et dapibus orci. Curabitur vel gravida velit, non accumsan odio. Ut lacinia lacus neque, quis iaculis eros porta sit amet. Nulla blandit ex et molestie dignissim. Maecenas placerat, ante vel pharetra tempor, justo libero hendrerit dui, nec egestas augue nulla nec quam.
-          </p>
-
-        </article>
-        <footer>rhoncus lectus posuere finibus quis at dui</footer>
-      </section>
-
-      <aside id="right_aside" class="">
-          <section class="column_notice">
-            <h1>Important</h1>
-            <article class="notice_article">
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              </article>
-          </section>
-          <section class="column_notice">
-            <h1>News</h1>
-            <article class="notice_article">
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              </article>
-          </section>
-          <section class="column_notice">
-            <article class="notice_article">
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              <p>Sed euismod lobortis urna sit amet mollis. Vestibulum dignissim ullamcorper odio, eget interdum enim auctor eget. </p>
-              </article>
-          </section>
-      </aside>
-    </div>
-
-    <footer id="main_footer">This is the footer</footer>
+    </div> <!--End of main wrapper-->
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>

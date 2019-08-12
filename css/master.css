@@ -1,185 +1,380 @@
-/*https://www.w3schools.com/w3css/tryw3css_templates_social.htmhttps://www.w3schools.com/w3css/tryw3css_templates_social.htm*/
+/*
+ ==================================================================================
+                Setting up core content and definitions
+===================================================================================
+*/
 
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #FFFFFF;
+  --gray: #869AB8;
+  --gray-dark: #384C74;
+  --primary: #335EEA;
+  --secondary: #506690;
+  --success: #42BA96;
+  --info: #7C69EF;
+  --warning: #FAD776;
+  --danger: #DF4759;
+  --light: #F9FBFD;
+  --dark: #2B354F;
+  --primary-desat: #6C8AEC;
+  --black: #161C2D;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+
+/* ========= End of core content and definitions =============== */
+
+/*
+ ==================================================================================
+                Definitions of core components
+===================================================================================
+*/
 *{
   margin:0px;
   padding:0px;
 }
 
+
 body{
-  background-color:#BFC9CA;
   margin:0px;
   padding:0px;
-  display:flex;
-  flex-direction:column;
-  height:100%;
+  background-color:white;
 }
 
-header, section, footer, aside, nav, article, hgroup{
-  display:block;
-}
-
-#main_header{
-  margin:0px;
-  padding:3px;
-  padding-bottom:20px;
-  height:50px;
-}
-
-#main_header p{
+main_wrapper{
   margin:0px;
   padding:0px;
-  float:right;
-  font:bold 42px Georgia;
 }
-
-#nav_main{
-  background-color:#616A6B;
+.container{
   margin:0px;
   padding:0px;
-  height:70px;
 }
 
-#nav_main li{
-  display:inline-block;
-  list-style:none;
-  border-radius:3px;
-  margin:5px;
-  padding:5px;
-  height:80px;
-  font:bold 14px Tahoma;
-}
-
-#nav_logo{
-  clear:both;
+.row{
+  width:90%;
   margin:0px;
   padding:0px;
-  padding-bottom:10px;
-  height:50px;
-  width:50px;
 }
 
-#nav_main li a{
-  background-color:#616A6B;
-  height:50px;
-  padding:17px;
-  margin:5px;
+section{
+  margin:0px;
+  padding:0px;
+  border-radius: 4px;
 }
 
-#nav_main li a:link{
-  background-color:#85929E;
-  border-radius:3px;
-  color:white;
+article{
+  margin:0px;
+  padding:0px;
+  border-radius: 4px;
 }
 
-#nav_main li a:visited{
-  color:white;
-  border-radius:3px;
+
+
+/*Main heading and subheading paring*/
+h1{
+  font:34px bold;
+  font-family: 'Merriweather', serif;
+
 }
 
-#nav_main li a:hover{
-  background-color:red;
-  border-radius:3px;
+h2{
+  font:14px;
+  font-family: 'Crimson Text', serif;
+}
+/*Secondary heading and subheading paring*/
+h3{
+  font:24px italic;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
-#nav_main li a:active{
-  color:white;
-  border-radius:3px;
+h4{
+  font:14px;
+  font-family: 'Crimson Text', serif;
+}
+/*Tertiary heading and subheading paring*/
+h5{
+  font:12px bold;
+  font-family: 'Merriweather', serif;
+
 }
 
-#main_wrapper{
-  /*background-color:#CCD1D1;*/
-  margin:5px;
-  padding:5px;
-  display:flex;
-  flex-direction:row;
-  height:100%;
+h6{
+  font:10px;
+  font-family: 'Crimson Text', serif;
 }
 
-#left_aside{
-  background-color:#F4F6F6;
-  border-radius:5px;
-  margin:5px;
-  padding:5px;
-  flex-grow:3;
+
+.img_center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:20%;
+  width: 50%;
 }
 
-#main_section{
-  background-color:#F4F6F6;
-  border-radius:5px;
-  margin:5px;
-  padding:5px;
-  flex-grow:10;
-}
+/*
+==================================================================================
+                 xs sized control elements
+===================================================================================
+*/
 
-  #main_section h1{
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    margin-bottom:4px;
-  }
+/* start of phone styles */
+/*xs*/ @media screen and (max-width: 576px) {
+    .container{max-width:450px;}
 
-  #main_section h2{
-    font-family: 'Poppins', sans-serif;
-    font-size:18px;
-    margin-bottom:4px;
-  }
-
-  #main_section h3{
-    font: 12px Tahoma;
-    text-align:right;
-    margin-bottom:4px;
-  }
-
-  #main_section p{
-    font-size: 16px;
-    font-family: 'PT Sans', sans-serif;
-    text-align:left;
-    margin-bottom:12px;
-  }
-
-  #main_section footer{
-    font-family: 'PT Serif', serif;
-    font-size: 12px;
-    text-align:center;
-    margin-top:20px;
-    padding-top:1px;
-    border-top:solid black 1px;
-  }
-
-#right_aside{
-  background-color:#F4F6F6;
-  border-radius:5px;
-  margin-bottom:5px;
-  padding:5px;
-  flex-grow:3;
-}
-
-  .main_sidebar{
-      background:#797D7F  ;
-      text-align:center;
-      margin-bottom:8px;
+    .p-1{
       padding:2px;
-      border-radius:3px;
+    }
+
+    .m-1{
+      margin:2px;
+    }
+
+    .py-1{
+      padding-top:2px;
+      padding-bottom:2px;
+    }
+
+    .my-1{
+      margin-top:2px;
+      margin-bottom:2px;
+    }
+
+    .p-2{
+      padding:4px;
+    }
+
+    .m-2{
+      margin:4px;
+    }
+
+    .p-3{
+      padding:6px;
+    }
+
+    .m-3{
+      margin:6px;
+    }
+
+    #welcome_content{
+      background-color:white;
+      display:table;
+    }
+
+      #welcome_content .col img{
+        min-width:200px;
+        max-width:400px;
+      }
+
+      #welcome_content h1{
+        font-size:2.0rem;
+      }
+
+      #welcome_content h2{
+        font-size:1.8rem;
+      }
+
+      #welcome_content h5{
+        font-size:0.9rem;
+      }
+
+      #welcome_content h6{
+        font-size:0.9rem;
+      }
+
+    #tutoring_explained{
+    }
+
+    #tutoring_explained .row{
+      margin:0px;
+      padding:0px;
+    }
+
+    #tutoring_explained h3{
+      font-size:1.6rem;
+      max-width:90%;
+    }
+
+    #tutoring_explained h4{
+      font-size:1.2rem;
+      max-width:90%;
+    }
+
+    #tutoring_explained .col a{
+      color:white;
+      text-decoration:none;
+    }
   }
 
-  .column_notice{
-    background:#797D7F  ;
-    text-align:center;
-    margin-bottom:8px;
-    padding:2px;
-    border-radius:3px;
-  }
 
-  .column_notice article {
-    background:blue;
-  }
 
-  .column_notice article p{
-    background:grey;
-  }
 
-#main_footer{
-  clear:both;
-  background-color:#707B7C;
-  margin:5px;
-  padding:5px;
+
+
+
+
+
+
+
+
+/* ============= END OF XS elements ===================================== */
+
+
+
+
+/*
+==================================================================================
+                 Media control content
+===================================================================================
+*/
+  /* start of Desktop styles */
+/*lg*/ @media screen and (max-width: 1400px) {
+  .container{max-width:1390px;}
+  #welcome_content img{min-width:500px;}
+
 }
+
+/* start of large tablet styles */
+/*md*/ @media screen and (min-width:760px) and (max-width: 1080px) {
+    .container{min-width:720; max-width:960px;}
+  #welcome_content img{min-width:450px;}
+
+}
+/* start of medium tablet styles */
+/*sm*/ @media screen and (min-width:577px) and (max-width:760) {
+  .container{
+    min-width:560;
+    max-width:720px;
+  }
+  #welcome_content img{min-width:450px;}
+
+}
+
+
+/* ========= End of other page mateiral =============== */
+
+/*
+ ==================================================================================
+                  Front page content and material
+===================================================================================
+*/
+#welcome_logos{
+  background-color:white;
+  max-width: 100%;
+}
+#welcome_logos .container{
+  max-width: 100%;
+  padding:0px;
+  margin:0px;
+}
+
+  #welcome_logos .row{
+    border: 1px solid gray;
+    max-width: 100%;
+  }
+
+    #welcome_logos .col{
+      display: flex;
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align:center;
+    }
+
+      #welcome_logos .logo{
+        min-width:80px;
+        max-width:100px;
+        height: auto;
+      }
+
+.logo_lg{
+  width:100px;
+  height:150px;
+}
+
+.icon_row li{
+  display:inline;
+  font-size:20px;
+}
+
+/* For Khan academy SVG logo*/
+.khan{
+  width:30px;
+  height:30px;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 40px;
+  height:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-envira{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  font-size: 50px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/* ========= End of front page mateiral =============== */
+
+/*
+ ==================================================================================
+                Other pages
+===================================================================================
+*/
+
+/* ========= End of other page mateiral =============== */
