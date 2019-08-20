@@ -48,7 +48,7 @@ Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
     <title>Learning Central</title>
   </head>
   <body>
-    <div class="main_wrapper">
+    <div id="main_wrapper" class="container_fluid">
       <!-- WELCOME
       ================================================== -->
       <header>
@@ -80,61 +80,69 @@ Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
       -->
       <div id="welcome_content" class="container-fluid vertical-center">
         <div class="row align-items-center justify-content-md-center">
-          <div class="col col-xl-6 col-lg-6 order-lg-1 col-md-6 order-md-1 col-sm-11 order-sm-2 col-xs-11 order-sm-2" data-aos="fade-right">
-              <h1>Welcome to Education central. <br /> Opening education to all. </h1>
-              <h2>Aiming to distill years of teaching experience into simple solutions for others.</h2>
-              <button type="button" class="btn btn-primary">View all pages</button>
-              <button type="button" class="btn btn-secondary">Documentation</button>
+          <div class="col col-12 order-1 col-sm-12 order-sm-1" data-aos="fade-right">
+              <h1 class="display-3"><b>Welcome to Education central.</b> <br /> <i>Opening education to all. </i></h1>
+              <h2 class="display-4">Aiming to distill years of teaching experience into simple solutions for others.</h2>
           </div>
-          <div class="col col-xl-6 col-lg-6 order-lg-1 col-md-5 order-md-2 col-sm-11 order-sm-1 col-xs-11 order-sm-1">
-            <img class="img-fluid mx-auto d-block" data-aos="fade-left" data-aos-delay="300" src="pics/frontPageImage.jpg" alt="oops, lost the image">
+          <div class="col col-12 order-3 col-sm-12 order-sm-2">
+            <img class="img-main img-fluid mx-auto d-block" data-aos="fade-left" data-aos-delay="300" src="pics/frontPageImage.jpg" alt="oops, lost the image">
+          </div>
+          <div class="col col-12 order-2 col-sm-12 order-sm-3 py-2">
+            <button type="button" class="btn btn-xs btn-primary">View all pages</button>
+            <button type="button" class="btn btn-xs btn-secondary">Documentation</button>
           </div>
         </div>
         <div class="row">
-          <div class="col" data-aos="fade-right" data-aos-delay="300">
-            <h5> <a class="linkless" href="#">Tutoring Services</a></h5>
-            <h6>Services, and availabilities for Math and Science tutoring services.</h6>
+          <div class="col3 col col-12" data-aos="fade-right" data-aos-delay="300">
+            <p><b><a class="linkless" href="#">Tutoring Services</a></b></p> <br/>
+            <p>Services, and availabilities for Math and Science tutoring services.</p>
           </div>
-          <div class="col" data-aos="fade-up" data-aos-delay="300">
-            <h5> <a class="linkless" href="#">Programming and development services</a></h5>
-            <h6>Examples of available services, programming projects and coding resources</h6>
+          <div class="col3 col col-12 " data-aos="fade-up" data-aos-delay="300">
+            <p> <b><a class="linkless" href="#">Programming services</a></b></p><br/>
+            <p>Examples of available services, programming projects and coding resources</p>
           </div>
-          <div class="col" data-aos="fade-left" data-aos-delay="300">
-            <h5> <a class="linkless" href="#">Educational documentation and resources</a></h5>
-            <h6>A list of articles, documents, blogs, apps and programs useful for education</h6>
+          <div class="col3 col col-12" data-aos="fade-left" data-aos-delay="300">
+            <p> <b><a class="linkless" href="#">Educational resources</a></b></p><br/>
+            <p>A list of articles, documents, blogs, apps and programs useful for education</p>
           </div>
         </div><!-- End of welcome content row-->
       </div><!-- End of welcome content-->
 
-
+<hr class="d-none">
       <!-- Start of welcome logos
       =================================================================================================
       -->
       <div id="welcome_logos" class="container-fluid p-0">
-        <div class="row">
-          <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 d-none d-sm-inline">
+        <div class="row d-block">
+          <div class="col col-sm-12 d-none d-sm-block">
             <div class="container">
               <div class="row mx-0 my-0 px-0 py-0">
                 <div class="col col-6">
                   <div class="container">
                     <div class="row mx-0 my-0 px-0 py-0">
-                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
-                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="https://rwm659.github.io/pics/SAT.png" alt="">
+                      <div class="col col-6 col-sm-4 mx-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="pics/SAT.png" alt="">
                       </div>
-                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
-                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="https://rwm659.github.io/pics/bcEducation.jpg" alt="">
+                      <div class="col-sm-2">
+                        <p class="d-none">This is an empty container to help with image spacing</p>
+                      </div>
+                      <div class="col col-6 col-sm-4 mx-auto d-block">
+                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="pics/bcEducation.jpg" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 col-sm-12 py-sm-3">
                   <div class="container">
                     <div class="row mx-0 my-0 px-0 py-0">
-                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
-                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="https://rwm659.github.io/pics/core_conpentency_model.png" alt="">
+                      <div class="col col-6 col-sm-4 ">
+                        <img class="logo img-fluid mx-sm-auto d-block" data-aos="fade-right" data-aos-delay="300" src="pics/core_conpentency_model.png" alt="">
                       </div>
-                      <div class="col col-6 col-lg-6 mx-auto px-auto d-block">
-                        <img class="logo img-fluid" data-aos="fade-right" data-aos-delay="300" src="https://rwm659.github.io/pics/pics/blooms-taxonomy.gif" alt="">
+                      <div class="col-sm-2">
+                        <p class="d-none">This is an empty container to help with image spacing</p>
+                      </div>
+                      <div class="col col-6 col-sm-4  d-block">
+                        <img class="logo img-fluid mx-sm-auto " data-aos="fade-right" data-aos-delay="300" src="pics/blooms-taxonomy.gif" alt="">
                       </div>
                     </div>
                   </div>
@@ -142,29 +150,35 @@ Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
               </div>
             </div>
           </div>
-          <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 d-none d-sm-inline">
+          <div class="col col-sm-12 d-none d-sm-block">
             <div class="container">
               <div class="row mx-0 my-0 px-0 py-0">
                 <div class="col col-6">
                   <div class="container">
-                    <div class="row mx-0 my-0 px-0 py-0">
-                      <div class="col col-6 col-lg-5 d-block">
-                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="https://rwm659.github.io/pics/bootstrapLogo.png" alt="">
+                    <div class="row mx-0 mx-auto my-0 px-0 py-0">
+                      <div class="col col-6 col-sm-4 d-block">
+                        <img class="logo img-fluid" width="75%" data-aos="fade-right" data-aos-delay="300" src="pics\bootstrapLogo.png" alt="">
                       </div>
-                      <div class="col col-6 col-lg-5 d-block">
-                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="https://rwm659.github.io/pics/javaScript.jpg" alt="">
+                      <div class="col-sm-3">
+                        <p class="d-none">This is an empty container to help with image spacing</p>
+                      </div>
+                      <div class="col col-6 col-sm-4 d-block">
+                        <img class="logo img-fluid" width="75%" data-aos="fade-right" data-aos-delay="300" src="pics\javaScript.jpg" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col col-6">
+                <div class="col col-6 col-sm-12 py-sm-3">
                   <div class="container">
-                    <div class="row mx-0 my-0 px-0 py-0">
-                      <div class="col col-6 col-lg-6 d-block">
-                          <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="https://rwm659.github.io/pics/phpLogo.png" alt="">
+                    <div class="row mx-0 mx-auto my-0 px-0 py-0">
+                      <div class="col col-6 col-sm-4 d-block">
+                        <img class="logo img-fluid mx-sm-auto d-block" data-aos="fade-right" data-aos-delay="300" src="pics/phpLogo.png" alt="">
                       </div>
-                      <div class="col col-6 col-lg-6 d-block">
-                        <img class="logo img-fluid" data-aos="fade-left" data-aos-delay="300" src="https://rwm659.github.io/pics/phyton-django.jpg" alt="">
+                      <div class="col-sm-2">
+                        <p class="d-none">This is an empty container to help with image spacing</p>
+                      </div>
+                      <div class="col col-6 col-sm-4 d-block">
+                        <img class="logo img-fluid mx-sm-auto " data-aos="fade-right" data-aos-delay="300" src="pics/phyton-django.jpg" alt="">
                       </div>
                     </div>
                   </div>
@@ -172,37 +186,38 @@ Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </div><!-- End of welcome logo section-->
       <!-- End of welcome logo row-->
-      </div><!-- End of welcome logo section-->
+<hr>
       <!-- Start of tutoring explained
       =================================================================================================
       -->
-      <div id="tutoring_explained" class="section_container container-fluid">
-        <div class="row align-items-center justify-content-center justify-content-md-center">
+      <div id="tutoring_explained" class="container-fluid">
+        <div class="row">
           <div class="col col-12 col-sm-12">
-            <img class="img-fluid mx-auto px-auto d-block" data-aos="fade-up" data-aos-delay="300" src="https://rwm659.github.io/pics/tutor-and-student-working.jpg" alt="">
+            <img class="img-fluid img-main d-block" data-aos="fade-up" data-aos-delay="300" src="pics/tutor-and-student-working.jpg" alt="">
           </div>
           <div class="col col-12 col-sm-12">
             <div class="row">
               <div class="container">
-                <div class="col">
-                  <h3 data-aos="fade-right" data-aos-delay="300">Tutoring services available for Nanimo BC</h3>
-                  <h4 data-aos="fade-left" data-aos-delay="300">Years of experience teaching high school maths and sciences. Willing to meet to discuss your tutoring needs</h4>
-                  <button data-aos="fade-left" data-aos-delay="300" type="button" class="btn btn-primary"><a href="tutorLanding.html">Tutor Pages</a></button>
+                <div class="col col-12 mx-auto py-2">
+                  <h3 data-aos="fade-right" data-aos-delay="300"><b>Tutoring services available for Nanimo BC</b></h3>
+                  <p data-aos="fade-left" data-aos-delay="300">Years of experience teaching high school maths and sciences. Willing to meet to discuss your tutoring needs</p>
+                  <button data-aos="fade-left" data-aos-delay="300" type="button" class="btn btn-xs btn-primary"><a href="tutorLanding.html">Tutor Pages</a></button>
                 </div>
                 <div class="col">
                   <div class="container">
                     <div class="row">
                       <div class="col px-1" data-aos="fade-right" data-aos-delay="300">
-                        <p>SAT Preparation</p>
-                        <p>High School Tutoring</p>
-                        <p>All math Classes supported</p>
+                        <i class="fas fa-circle"></i><p> SAT Preparation</p><br />
+                        <i class="fas fa-circle"></i><p> High School Tutoring</p><br />
+                        <i class="fas fa-circle"></i><span><p> All math Classes supported</p></span><br />
                       </div>
                       <div class="col px-1" data-aos="fade-left" data-aos-delay="300">
-                        <p>Biology</p>
-                        <p>Chemistry</p>
-                        <p>Physics</p>
+                        <i class="fas fa-circle"></i><p>Biology</p><br />
+                        <i class="fas fa-circle"></i><p>Chemistry</p><br />
+                        <i class="fas fa-circle"></i><p>Physics</p><br />
                       </div>
                     </div>
                   </div>
@@ -213,145 +228,189 @@ Based on: https://themes.getbootstrap.com/preview/?theme_id=4231&show_new=
         </div>
       </div>
       <!-- End of tutoring explained-->
-
+<hr>
       <!-- Start of programming explained
       =================================================================================================
       -->
-      <div id="programming_explained" class="programming_container-fluid">
+      <div id="programming_explained" class="py-3">
         <div class="row">
-          <div class="col">
-            <h3>Technical and programming experience dating back to 2005</h3>
-            <h4>Experience in computer repair, networking and now specializing in website development</h4>
+          <div class="col col-12 " data-aos="fade-up" data-aos-delay="300">
+            <h3>Technical and programming experience since 2005</h3>
+          </div>
+          <div class="col col-12" data-aos="fade-right" data-aos-delay="300">
+            <img class="img-fluid d-flex img_middle_center" src="pics/webDevelopment.jpg" alt="programming related image">
+          </div>
+          <div class="col col-12" data-aos="fade-left" data-aos-delay="300">
+            <h4 class="align-middle">Experience in computer repair, networking and now specializing in website development</h4>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <h5>Support content management systems</h5>
-                <h6>Experience with wordpress, Joomla Django among others.</h6>
-                <h6>Years of custom development: Html5, JS, CSS, Boostrap among others. </h6>
-              </div>
-              <div class="col">
-                  <img class="img-fluid" src="https://rwm659.github.io/pics/html5Design.png" alt="something">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h5>Website support</h5>
-                <h6>Develop the website you want. Support from scratch development or assist in setting up content management systems such as squarespace or Wix among others. Contant me today to see how I could assist you. </h6>
-              </div>
-              <div class="col">
-                <img class="img-fluid" src="https://rwm659.github.io/pics/phyton-django.jpg" alt="something">
-              </div>
-            </div>
+        <div class="row row-table py-3">
+          <div class="col col-5 col-table col-table" >
+            <img class="img-fluid d-block mx-auto px-auto" src="pics/squarespace-logo-tertiary-black.jpg" WIDTH="80%" alt="something" data-aos="fade-right" data-aos-delay="300">
           </div>
-          <div class="col">
-            <img class="img-fluid d-flex" src="https://rwm659.github.io/pics/webDevelopment.jpg" alt="programming related image">
+          <div class="col col-7 col-table" data-aos="fade-left" data-aos-delay="300">
+            <p><b>Support content management systems</b></p><br />
+            <p>Experience with wordpress, Joomla Django among others.</p><br />
+            <p>Years of custom development: Html5, JS, CSS, Boostrap among others. </p>
+          </div>
+        </div>
+        <div class="row row-table py-1">
+          <div class="col col-5 col-table col-table">
+            <img class="img-fluid d-block mx-auto" src="pics\web3.0Logo.png" width="50%" alt="something" data-aos="fade-right" data-aos-delay="300">
+          </div>
+          <div class="col col- col-table7" data-aos="fade-left" data-aos-delay="300">
+            <p><b>Website support</b></p>
+            <p>Develop the website you want. Support from scratch development or assist in setting up content management systems such as squarespace or Wix among others. Contant me today to see how I could assist you. </p>
           </div>
         </div>
       </div>
       <!-- End of programming explained-->
-
+<hr>
       <!-- Start of Education explained
       =================================================================================================
       -->
-      <div id="education_explained" class="education_container-fluid">
-        <div class="container">
+      <div id="education_explained" class="py-3">
+        <div class="container-fluid">
           <div class="row">
-            <h3><b>Responsive STEM teacher</b></h3>
-            <h4>With a decade of experience I have worked with students of all backgrounds. I have found the key is to be flexible which requires being up to date with recent research. </h4>
-          </div>
-          <div class="row">
-            <div class="bd-example">
-              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img width="400" height="400" src="https://rwm659.github.io/pics/core_conpentency_model.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>British Columbia Core Compentencies</h5>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img width="400" height="400" src="https://rwm659.github.io/pics/bcEducation.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Britich Columbia Ministry of Education</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img width="400" height="400" src="https://rwm659.github.io/pics/blooms-taxonomy.gif" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Blooms Taxonomy</h5>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="col col-12">
+              <div class="row">
+                <div class="col col-12" data-aos="fade-up" data-aos-delay="300">
+                  <h2><b>Responsive STEM teacher</b></h2>
+                </div>
+                <div class="col col-12">
+                  <img class="d-block w-100" src="pics\stem-logo.jpg" alt="First slide" data-aos="fade-left" data-aos-delay="300">
+                </div>
+                <div class="col col-12" data-aos="fade-right" data-aos-delay="300">
+                  <p>With a decade of experience I have worked with students of all backgrounds. I have found the key is to be flexible which requires being up to date with recent research. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <div class="carosel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner w-150" >
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="pics/bcEducation.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="pics/blooms-taxonomy.gif" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="pics/core_conpentency_model.png" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- End of programming explained-->
-
+<hr>
+<!-- Start of main footer section
+=================================================================================================
+-->
       <footer id="main_footer" class="container">
         <div class="row">
-          <div class="col">
-            <h3><b>Learning Central</b></h3>
-            <h5>Opening education to all</h5>
-            <ul class="icon_row">
-              <li><a href="https://www.khanacademy.org/"><svg class="khan">
+          <div class="col col-12">
+            <h1 class="text-center" data-aos="fade-right" data-aos-delay="300"><b>Learning Central</b></h1>
+            <h4 class="text-center" data-aos="fade-left" data-aos-delay="300">Opening education to all</h4>
+          </div>
+          <div class="col col-12 mx-auto d-block">
+            <ul class="icon_row text-center">
+              <li data-aos="fade-right" data-aos-delay="300"><a href="https://www.khanacademy.org/"><svg class="khan">
                 <path fill="#14bf96" d="M2.31,5.8A3.56,3.56,0,0,0,.66,8.6V19.4a3.56,3.56,0,0,0,1.65,2.8L12,27.62a3.75,3.75,0,0,0,3.3,0L25,22.2a3.56,3.56,0,0,0,1.65-2.8V8.6A3.56,3.56,0,0,0,25,5.8L15.31.38a3.75,3.75,0,0,0-3.3,0Z"></path>
                 <path fill="#ffffff" d="M23.61,11.32c-5.38,0-9.4,4.46-9.4,9.93v.23H13.13v-.23c0-5.47-4-9.91-9.42-9.93,0,.34,0,.69,0,1a9.91,9.91,0,0,0,6.4,9.32,10.47,10.47,0,0,0,3.59.64,10.64,10.64,0,0,0,3.62-.64,9.92,9.92,0,0,0,6.39-9.32C23.66,12,23.64,11.66,23.61,11.32Z"></path>
                 <circle fill="#ffffff" cx="13.66" cy="8.74" r="3"></circle>
               </svg></a></li>
-              <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
-              <li><a href="https://www.instagram.com" class="fa fa-instagram fa-lg"></a></li>
-              <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
-              <li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+              <li data-aos="fade-right" data-aos-delay="400"><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+              <li data-aos="fade-right" data-aos-delay="500"><a href="https://www.instagram.com" class="fa fa-instagram fa-lg"></a></li>
+              <li data-aos="fade-right" data-aos-delay="600"><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+              <li data-aos="fade-right" data-aos-delay="700"><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
             </ul>
           </div>
           <div class="col">
-            <h5><b>Tutoring Services</b></h5>
-            <h6>Math tutoring</h6>
-            <h6>Calculus Tutoring</h6>
-            <h6>Physics tutoring</h6>
-            <h6>Chemistry tutoring</h6>
-            <h6>Biology Tutoring</h6>
-            <h6>SAT preparation</h6>
-          </div>
-          <div class="col">
-            <h5><b>Programming</b></h5>
-            <h6>Website development</h6>
-            <h6>Website consultation</h6>
-            <h6>Apps and programs</h6>
-          </div>
-          <div class="col">
-            <h5><b>Education</b></h5>
-            <h6>Course websites</h6>
-            <h6>Science resources</h6>
-            <h6>Math resources</h6>
-            <h6>Educational Pedagogy</h6>
-            <h6>Blog</h6>
-            <h6>Links</h6>
+            <div class="row text-center">
+              <div class="col col-12">
+                <div class="row" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="col col-12">
+                    <h5><b>Tutoring Services</b></h5>
+                  </div>
+                  <div class="col col-12">
+                    <div class="row">
+                      <div class="col"><p>Math tutoring</p></div>
+                      <div class="col"><p>Calculus Tutoring</p></div>
+                      <div class="col"><p>Physics tutoring</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><p>Chemistry tutoring</p></div>
+                      <div class="col"><p>Biology Tutoring</p></div>
+                      <div class="col"><p>SAT preparation</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 d-inline">
+                <div class="row py-3" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="col col-12 ">
+                    <h5><b>Programming</b></h5>
+                  </div>
+                  <div class="col col-12">
+                    <div class="row">
+                      <div class="col"><p>Website development</p></div>
+                      <div class="col"><p>Website consultation</p></div>
+                      <div class="col"><p>Apps and programs</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 d-inline">
+                <div class="row" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="col col-12">
+                    <h5><b>Education</b></h5>
+                  </div>
+                  <div class="col col-12">
+                    <div class="row">
+                      <div class="col col-12">
+                        <div class="row">
+                          <div class="col"><p>Course websites</p></div>
+                          <div class="col"><p>Science resources</p></div>
+                          <div class="col"><p>Math resources</p></div>
+                        </div>
+                      </div>
+                      <div class="col col-12">
+                        <div class="row">
+                          <div class="col"><p>Pedagogy</p></div>
+                          <div class="col"><p>Blog</p></div>
+                          <div class="col"><p>Links</p></div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
-
     </div> <!--End of main wrapper-->
   </body>
   <script>
